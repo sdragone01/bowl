@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Bowling</title>
+</head>
+<body>
+    <div>
+    <h1>Today is</h1>
+    <h2 id="date"> </h2>
+    <h1> Will Nicole Beat Sal at Bowling?</h1>
+    <button onclick="show()" >Click Here</button>
+   
+    <script>
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth();
+        d = n.getDate();
+        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+        
+        function show() {
+            let image = document.getElementById("image");
+            image.src = "https://media.giphy.com/media/spfi6nabVuq5y/giphy.gif"
+            
+        }
+    </script>
+</div>
+<img id="image" src="" alt="">
+</body>
+</html>
